@@ -1,0 +1,11 @@
+{
+     "type": "record",
+     "namespace": "com.inovatrend",
+     "name": "Person",
+     "doc": "Avro Schema for our Person",
+     "fields": [
+       { "name": "name", "type": "string", "doc": "Name of Person" },
+       { "name": "city", "type": "string", "doc": "City" },
+       { "name": "age", "type": "int", "doc": "Age of the person" }
+     ]
+}
