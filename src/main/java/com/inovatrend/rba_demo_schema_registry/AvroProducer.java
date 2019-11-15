@@ -22,7 +22,7 @@ public class AvroProducer {
 
         KafkaProducer<String, Person> producer = new KafkaProducer<>(config);
 
-        Person person = new Person("marko", "Zagreb", 29, "marko@example.com", "");
+        Person person = new Person("marko", "Zagreb", 29);
         producer.send(new ProducerRecord<>("person-avro-topic",person ));
 
         System.out.println("Done");

@@ -38,7 +38,6 @@ public class AvroConsumer {
         while (true){
             ConsumerRecords<String, Person> records = consumer.poll(Duration.of(100, ChronoUnit.MILLIS));
             for (ConsumerRecord<String, Person> record : records) {
-                System.out.println("Person street address: " + record.value().getStreet());
                 System.out.println("Consumed record: " + record.value());
             }
         }
